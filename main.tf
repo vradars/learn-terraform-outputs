@@ -9,6 +9,7 @@ terraform {
 
 provider "aws" {
   region = var.aws_region
+  profile = "terraform-training"
 }
 
 data "aws_availability_zones" "available" {
